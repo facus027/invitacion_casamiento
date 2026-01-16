@@ -7,7 +7,7 @@ interface ImageFadeGridProps {
 
 export function ImageFadeGrid({
   images,
-  intervalMs = 7000,
+  intervalMs = 5500,
 }: ImageFadeGridProps) {
   const ITEMS_PER_VIEW = 3
 
@@ -42,7 +42,7 @@ export function ImageFadeGrid({
   return (
     <div className="mx-auto w-full mt-10">
       <div
-        className={`grid grid-cols-3 gap-2 transition-opacity duration-500 ease-in-out ${
+        className={`grid grid-cols-3 md:gap-2 gap-0.5 px-1 transition-opacity duration-500 ease-in-out ${
           visible ? "opacity-100" : "opacity-0"
         }`}
       >

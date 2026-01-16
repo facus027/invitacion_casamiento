@@ -61,7 +61,7 @@ export function Countdown({ targetDate }: CountdownProps) {
 function Colon() {
   return (
     <span
-      className="translate-y-[-2px] font-montse_medium text-title text-5xl mb-5 leading-none text-texto sm:text-5xl sm:mt-5"
+      className="translate-y-[-2px] font-montse_medium text-title text-5xl mb-5 leading-none bg-background sm:text-5xl sm:mt-5"
       aria-hidden="true"
     >
       :
@@ -71,7 +71,7 @@ function Colon() {
 
 function TimeBox({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex w-[78px] flex-col items-center justify-center rounded-xl bg-[#f3eee8] px-2 py-2 sm:w-[90px]">
+    <div className="flex w-[78px] flex-col items-center justify-center rounded-xl bg-background px-2 py-2 sm:w-[90px]">
       <span className="text-6xl font-semibold text-title leading-none sm:text-5xl">
         {String(value).padStart(2, "0")}
       </span>

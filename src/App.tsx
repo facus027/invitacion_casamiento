@@ -1,5 +1,6 @@
 import { Countdown } from "./components/Countdown"
 import { ImageFadeGrid } from "./components/ImageFadeGrid"
+import { LunaDeMielCard } from "./components/LunaDeMielCard"
 //import { TickCounter } from "./components/TickCounter"
 
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-      <section className="mx-auto w-full max-w-md mt-10 text-center bg-background m-5">
+      <section className="mx-auto w-full max-w-md pt-10 text-center bg-background">
         <div className="flex">
           <img 
              src="/nombres-04.png" 
@@ -26,7 +27,7 @@ function App() {
         </div>
         
         <div>
-          <p className="text-lg font-[var(--font-playfair)] italic text-title mt-16">
+          <p className="md:text-lg text-base font-playfair italic text-title mt-16 px-2">
             Queremos vivir este momento rodeados de personas
             que han formado parte de nuestra historia.
             </p>
@@ -51,18 +52,18 @@ function App() {
       <img
         src="/gifts/fecha.gif"
         alt="fecha_gift"
-        className="mx-auto h-auto w-32 object-contain"
+        className="mx-auto h-auto w-20 object-contain"
       />
-           <h2 className="text-xl text-title tracking-wider uppercase">Agenda la fecha</h2>
+           <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase">Agenda la fecha</h2>
           </div>          
           <img 
              src="/fecha.png" 
              alt="Florencia&Federico"
-             className="w-11/12 h-auto mx-auto object-contain mt-10" 
+             className="w-3/4 h-auto mx-auto object-contain mt-10" 
           />
           
         </div>
-  <         p className="text-lg font-[var(--font-playfair)] italic text-title mt-16">
+            <p className="text-lg font-playfair pb-10 italic text-title mt-16">
             Intinerario
             </p>
         <div>
@@ -72,14 +73,14 @@ function App() {
               <img 
               src="/gifts/ceremonia.gif" 
               alt="gift_ceremonia" 
-              className="mx-auto h-auto w-32 object-contain"
+              className="mx-auto h-auto w-20 object-contain"
               />
 
-              <h2 className="text-2xl text-title tracking-wider uppercasemt-2">
+              <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercasemt-2">
                 CEREMONIA RELIGIOSA
               </h2>
 
-              <p className="text-lg text-texto tracking-wide uppercase mt-5 mb-10">
+              <p className="md:text-lg text-xs font-montserrat text-texto tracking-wide uppercase mt-5 mb-5">
                 18:45 horas <br/>
                 Santuario de María Auxiliadora.
               </p>
@@ -88,7 +89,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
               href="https://maps.app.goo.gl/d8PuJ2cLz4NkzbyJ6"
-              className="px-5 py-1 text-xl uppercase border-2 border-gray-500 rounded-full focus:ring-1 mt-5"
+              className="px-4 py-0.5 text-sm uppercase border font-montserrat text-gray-400 border-gray-500 rounded-full focus:ring-1"
               >
                 CÓMO LLEGAR
               </a>
@@ -98,14 +99,14 @@ function App() {
               <img 
               src="/gifts/recepción.gif" 
               alt="gift_recepción" 
-              className="mx-auto h-auto w-32 object-contain"
+              className="mx-auto h-auto w-20 object-contain"
               />
 
-              <h2 className="text-2xl text-title tracking-wider uppercase mt-2">
+              <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase mt-2">
                 recepción
               </h2>
 
-              <p className="text-lg text-texto tracking-wide uppercase mt-5 mb-10">
+              <p className="md:text-lg text-xs font-montserra text-texto tracking-wide uppercase mt-5 mb-5">
                 20:00 horas <br/>
                 Salón Te Grey.
               </p>
@@ -114,7 +115,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
               href="https://maps.app.goo.gl/KT56ukZHprpfa7vP7"
-              className="px-5 py-1 text-xl uppercase border-2 border-gray-500 rounded-full focus:ring-1 mt-5"
+              className="px-4 py-0.5 text-sm uppercase border font-montserrat text-gray-400 border-gray-500 rounded-full focus:ring-1"
               >
                 CÓMO LLEGAR
               </a>
@@ -123,45 +124,20 @@ function App() {
         </div>
 
         <div className="">
-          <div className="bg-[#c7dae6] p-6 mt-10 mb-5">
-              <img 
-              src="/gifts/luna de miel.gif" 
-              alt="gift_lunaDeMiel" 
-              className="mx-auto h-auto w-32 object-contain"
-              />
-
-              <h2 className="text-2xl text-texto tracking-wider uppercase mt-2">
-                LUNA DE MIEL
-              </h2>
-
-              <p className="text-lg text-title uppercase mt-5 mb-10">
-               Si desean hacernos un regalo
-               les agradecemos nos ayuden
-               en nuestra luna de miel.
-              </p>
-
-              <a 
-              target="_blank"
-              rel="noreferrer"
-              href="https://maps.app.goo.gl/KT56ukZHprpfa7vP7"
-              className="px-5 py-1 text-xl uppercase border-2 border-gray-500 rounded-full focus:ring-1 mt-5"
-              >
-                CONTRIBUIR
-              </a>
-            </div>
+          <LunaDeMielCard/>
 
               <div className="">
               <img 
               src="/gifts/desscode.gif" 
               alt="gift_desscode" 
-              className="mx-auto h-auto w-32 object-contain"
+              className="mx-auto h-auto w-20 object-contain"
               />
 
-              <h2 className="text-2xl text-title tracking-wider uppercase mt-2">
+              <h2 className="md:text-xl text-sm text-title font-montserratMedium tracking-wider uppercase mt-2">
                 dress code
               </h2>
 
-              <p className="text-lg text-texto tracking-wide uppercase mt-5 mb-10">
+              <p className="md:text-lg text-xs font-montserra text-texto tracking-wide uppercase mt-5 mb-10">
                 Formal - Elegante
               </p>
 
@@ -173,10 +149,10 @@ function App() {
               <img 
               src="/gifts/asistencia.gif" 
               alt="gift_asistencia" 
-              className="mx-auto h-auto w-32 object-contain"
+              className="mx-auto h-auto w-20 object-contain"
               />
 
-              <h2 className="text-2xl text-white tracking-wider uppercase mt-2 mb-10">
+              <h2 className="md:text-xl text-base text-white font-montserratMedium tracking-wider uppercase mt-2 mb-5">
                 CONFIRMÁ TU ASISTENCIA
               </h2>
 
@@ -184,7 +160,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
               href="https://forms.gle/w7mum2aWdHDpxa9BA"
-              className="px-5 py-1 text-xl uppercase border-2 text-white border-white rounded-full focus:ring-1 "
+              className="px-4 py-0.5 text-sm uppercase border font-montserrat text-white border-white rounded-full focus:ring-1 "
               >
                 COMPLETÁ EL FORMULARIO
               </a>

@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      
+       fontFamily: {
+        playfair: ['"Playfair Display"', "serif"],
+        montserrat: ['"Montserrat-Light"', "sans-serif"],
+        montserratMedium: ['"Montserrat-Medium"', "sans-serif"],
+      },
 
       colors: {
         'background': '#f3eeea',

@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("/public/tipografías/PlayfairDisplay-Italic.ttf") format("ttf");
+  src: url("/tipografías/PlayfairDisplay-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Montserrat-Light";
-  src: url("/public/tipografías/Montserrat-Light.ttf") format("ttf");
+  src: url("/tipografías/Montserrat-Light.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,14 +20,14 @@
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("/public/tipografías/Montserrat-Medium.ttf") format("ttf");
+  src: url("/tipografías/Montserrat-Medium.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --font-playfair: "Playfair Display", italic;
-  --font-montserrat:"Montserrat-Light",normal;
-  --font-montserrat-medium:"Montserrat-Medium",normal;
+  --font-playfair: "Playfair Display";
+  --font-montserrat:"Montserrat-Light";
+  --font-montserrat-medium:"Montserrat-Medium";
 }
