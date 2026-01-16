@@ -1,6 +1,7 @@
 import { Countdown } from "./components/Countdown"
 import { ImageFadeGrid } from "./components/ImageFadeGrid"
 import { LunaDeMielCard } from "./components/LunaDeMielCard"
+import { MusicPlayer } from "./components/MusicPlayer"
 //import { TickCounter } from "./components/TickCounter"
 
 
@@ -10,6 +11,13 @@ function App() {
   return (
     <>
       <section className="mx-auto w-full max-w-md pt-10 text-center bg-background">
+
+          <div className="relative md:ml-32 ml-r1 mx-auto font-montserratMedium font-bold w-full max-w-[420px]">
+           <div className="absolute right-3 md:top-3 -top-7 z-10 opacity-80 hover:opacity-100 ">
+             <MusicPlayer src="/audio/musica.mp3" />
+           </div>
+          </div>
+
         <div className="flex">
           <img 
              src="/nombres-04.png" 
