@@ -44,7 +44,7 @@ export function Countdown({ targetDate }: CountdownProps) {
   }, [targetMs])
 
  return (
-    <div className="mx-auto w-full max-w-[420px] rounded-2xl border border-black/10 bg-white p-3 shadow-sm">
+    <div className="mx-auto w-full max-w-[420px] rounded-2xl border border-black/10 bg-background p-3 shadow-sm">
       <div className="flex w-full items-center justify-between gap-1">
         <TimeBox label="Días" value={timeLeft.days} />
         <Colon />
