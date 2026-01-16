@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/public/tipografías/PlayfairDisplay-Italic.ttf") format("ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("/public/tipografías/Montserrat-Light.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/public/tipografías/Montserrat-Medium.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-playfair: "Playfair Display", italic;
+  --font-montserrat:"Montserrat-Light",normal;
+  --font-montserrat-medium:"Montserrat-Medium",normal;
+}
