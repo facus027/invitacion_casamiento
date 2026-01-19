@@ -72,7 +72,7 @@ function App() {
           
         </div>
             <p className="text-lg font-playfair pb-10 italic text-title mt-16">
-            Intinerario
+            Itinerario
             </p>
         <div>
 
