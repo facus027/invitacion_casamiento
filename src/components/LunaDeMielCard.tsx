@@ -34,10 +34,10 @@ export function LunaDeMielCard() {
       <GiftModal
         open={open}
         onClose={() => setOpen(false)}
-        accountType="Caja de ahorro en pesos"
+        accountType="Caja de ahorro en dólares"
         bankName="BBVA"
         cbu="01702400040000032173756"
-        alias="fyf2026"
+        alias="fyf2026usd "
         holder="Federico Gabriel Fernandez"
       />
     </>

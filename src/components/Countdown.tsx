@@ -44,7 +44,7 @@ export function Countdown({ targetDate }: CountdownProps) {
   }, [targetMs])
 
  return (
-    <div className="mx-auto w-full max-w-[420px] rounded-2xl border border-black/10 bg-background p-3 shadow-sm">
+    <div className="mx-auto w-full  bg-background p-2 shadow-sm">
       <div className="flex w-full items-center justify-between gap-1">
         <TimeBox label="Días" value={timeLeft.days} />
         <Colon />
@@ -61,7 +61,7 @@ export function Countdown({ targetDate }: CountdownProps) {
 function Colon() {
   return (
     <span
-      className="translate-y-[-2px] font-montse_medium text-title text-5xl mb-5 leading-none bg-background sm:text-5xl sm:mt-5"
+      className=" font-montse_medium text-title text-5xl mb-5 leading-none bg-background sm:text-5xl sm:mt-5"
       aria-hidden="true"
     >
       :
@@ -71,8 +71,8 @@ function Colon() {
 
 function TimeBox({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex w-[78px] flex-col items-center justify-center rounded-xl bg-background px-2 py-2 sm:w-[90px]">
-      <span className="text-6xl font-semibold text-title leading-none sm:text-5xl">
+    <div className="flex w-[78px] flex-col items-center justify-center rounded-xl bg-background px-0.5 py-2 sm:w-[90px]">
+      <span className="text-5xl font-semibold text-title leading-none sm:text-6xl">
         {String(value).padStart(2, "0")}
       </span>
       <span className="mt-1 text-lg uppercase tracking-widest text-texto sm:text-xl">
