@@ -7,6 +7,7 @@ type GiftModalProps = {
   accountType?: string
   cbu: string
   alias: string
+  aliasusd: string
   holder: string
 }
 
@@ -16,6 +17,7 @@ export function GiftModal({
   bankName = "BBVA",
   accountType = "Caja de ahorro en pesos",
   cbu,
+  aliasusd,
   alias,
   holder,
 }: GiftModalProps) {
@@ -81,7 +83,8 @@ export function GiftModal({
 
         <div className="mt-5 space-y-3">
           <CopyRow label="CBU" value={cbu} />
-          <CopyRow label="Alias" value={alias} />
+          <CopyRow label="Alias (En pesos)" value={alias} />
+          <CopyRow label="Alias (En dólares)" value={aliasusd} />
           <InfoRow label="Titular" value={holder} />
         </div>
 
